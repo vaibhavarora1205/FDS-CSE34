@@ -17,10 +17,10 @@ function Result() {
 
   const percentage = ((score / questions.length) * 100).toFixed(2);
 
-  const restartQuiz = () => {
-    localStorage.removeItem("answers");
-    navigate("/");
-  };
+const restartQuiz = () => {
+  localStorage.clear();
+  navigate("/");
+};
 
   return (
     <div className="result-page">
