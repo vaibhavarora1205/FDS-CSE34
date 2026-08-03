@@ -36,7 +36,7 @@
 // ((year%100!=0 && year%4==0)|| year%400==0)?console.log("leap year"):console.log("Not a leap Year");
 
 
-let x=1;
+// let x=1;
 // switch(x)
 // {
 //     case 1:
@@ -83,23 +83,62 @@ let x=1;
 
 
 
-let a=10;
-let b=20;
-let op="/";
-switch(op)
-{
-    case "+":
-        console.log(a+b);
-        break;
-    case "-":
-        console.log(a-b);
-        break;
-    case "*":
-        console.log(a*b);
-        break;
-    case "/":
-        console.log(a/b);
-        break;
-    default:
-        console.log("Enter valid operator");
-}
+// let a=10;
+// let b=20;
+// let op="/";
+// let x,y,op;
+// const readline=require("readline");
+// const rl=readline.createInterface({
+//     input: process.stdin,
+//   output: process.stdout,
+// });
+// rl.question("Enter first number: ",function(a){
+//     x=Number(a);
+//     rl.close;
+// }
+// )
+// rl.question("Enter second number: ",function(b){
+//     y=Number(b);
+//     rl.close;
+// }
+// )
+// rl.question("Enter operator: ",function(o){
+//     op=o;
+//     rl.close;
+// }
+// )
+// switch(op)
+// {
+//     case "+":
+//         console.log(a+b);
+//         break;
+//     case "-":
+//         console.log(a-b);
+//         break;
+//     case "*":
+//         console.log(a*b);
+//         break;
+//     case "/":
+//         console.log(a/b);
+//         break;
+//     default:
+//         console.log("Enter valid operator");
+// }
+
+
+// const readline=require("readline");
+// const rl=readline.createInterface({
+//     input: process.stdin,
+//   output: process.stdout,
+// });
+// rl.question("Enter your name: ",function(name){
+//     console.log("Hello "+name);
+//     rl.close;
+// }
+// )
+
+
+let x=5;
+let y;
+y = ++x + x++;
+console.log(y);
