@@ -81,6 +81,27 @@
 // console.log("Prime");
 
 
-let sum=0;
-for(let i=0;i<=9;i++, sum+=i)
-console.log(sum);
+// let sum=0;
+// for(let i=0;i<=9;i++, sum+=i)
+// console.log(sum);
+
+// tribonacci 
+// let a=1;
+// let b=2
+// let c=4;
+// let next;
+// console.log(a)
+// console.log(b)
+// console.log(c)
+// for(let i=0;i<5;i++)
+// {
+//     next=a+b+c;
+//     a=b;
+//     b=c;
+//     c=next;
+//     console.log(next);
+// }
+
+// prompt
+// let a=Number(prompt("Enter first number:"))
+
