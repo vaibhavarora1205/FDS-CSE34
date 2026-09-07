@@ -205,8 +205,6 @@
 // console.log(double(5));
 
 
-
-
 function Person(name)
 {
   this.name=name;
@@ -219,3 +217,11 @@ let p2=new Person("Vaibhav");
 console.log(p1.name);
 console.log(p1.getName())
 console.log(p2.getName())
+
+const person={
+  name:"Vaibhav"
+};
+function display(message){
+  console.log(message+" "+this.name);
+}
+display.call(person,"Hello");
