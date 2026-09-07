@@ -4,6 +4,8 @@
 // }
 // console.log(display())
 
+// const { StrictMode } = require("react")
+
 // console.log(display(10,'ab'))
 // console.log(display(10,null))
 
@@ -117,15 +119,103 @@
 // })();
 
 // =============================This KeyWord
-const Person = {
-  name: "Vaibhav",
-  age: 19,
-  greet: function () {
-    console.log(`Hello ${Person.name}`);
-    console.log(`Hello ${this.name}`);
-  },
-};
-console.log(Person);
-Person.greet();
-Person.name = "Vaibhav Arora";
-Person.greet();
+// const Person = {
+//   name: "Vaibhav",
+//   age: 19,
+//   greet: function () {
+//     console.log(`Hello ${Person.name}`);
+//     console.log(`Hello ${this.name}`);
+//   },
+// };
+// console.log(Person);
+// Person.greet();
+// Person.name = "Vaibhav Arora";
+// Person.greet();
+
+// function show() {
+//   console.log(this);
+// }
+// show();
+
+// const Person = {
+//   name: "ABC",
+//   greet: function () {
+//     console.log (this);
+//   },
+// };
+// console.log(Person.greet());
+// console.log(this);
+
+
+// "use strict"
+// function show(){
+//     console.log(this===global)
+// }
+// show()
+// global.show()
+
+
+// function outer()
+// {
+//   // "use strict"  
+//   console.log(this===undefined);
+//   function inner(){
+//     console.log(this===undefined);
+//   }
+//   inner();
+// }
+// outer();
+
+
+// const person={
+//   name:"Vaibhav",
+//   age:19,
+//   greet:function(){
+//     return this.name;
+//   }
+// };
+// // console.log(person.greet())
+// // let p1=person.greet;
+// let p1=person.greet.bind(person);
+// console.log(p1());
+
+
+// function greet(city,country)
+// {
+//   console.log(`i'm ${this.name} from ${city} ${country}`);
+// }
+// const person={
+//   name:"Vaibhav"
+// }
+// const fn=greet.bind(person,"MZN","INDIA");
+// fn();
+
+// const person={
+//   name:"Vaibhav",
+//   greet(){
+//     console.log(this.name);
+//   }
+// };
+// setTimeout(person.greet.bind(person),1000);
+
+// function multiply(a,b){
+//   return a*b;
+// }
+// const double=multiply.bind(null,2);
+// console.log(double(5));
+
+
+
+
+function Person(name)
+{
+  this.name=name;
+}
+Person.prototype.getName=function(){
+  return this.name;
+}
+let p1=new Person("Arvind");
+let p2=new Person("Vaibhav");
+console.log(p1.name);
+console.log(p1.getName())
+console.log(p2.getName())
